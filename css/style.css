@@ -6,6 +6,8 @@
 
 body {
 background-color:rgb(239, 230, 250);
+ margin: 80px auto;
+flex: 1;
 }
 
 h1 {
@@ -13,14 +15,18 @@ h1 {
  text-align:center;
  background-color: bisque;
  margin: 60px auto;
- width: 300px;
+ width: 400px;
+ font-size: 30px;
+ opacity: 0.7;
+ margin-top: 20px;
 }
+
 img {
     display: flex;
     display: block;
     margin: 60px auto;
-    width: 300px;
-
+    width: 400px;
+    justify-content: center;
 }
 
     p {
@@ -30,34 +36,56 @@ img {
         font-size: 18px;
         line-height: 1.5;
         text-align: center;
+        display: flex;
+        margin: 30px 0;
       }
 
-.navigation-links  {
-    margin: 20px;
-    border-radius: 4px;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
-  }
-  .contact-link {
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow);
-   color: white;
-  }
-  
-  .about-link {
-    background: var(--primary-color);
-    box-shadow: var(--box-shadow);
-   color: white;
-  }
-  .homepage-link {
-    margin: 20px;
-    border-radius: 4px;
-    padding: 20px 15px;
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
-  }
 
+      .navigation-links {
+        display: flex;
+        margin-top: 40px;
+        justify-content: center;
+      }
+      
+      .navigation-links a {
+        margin: 20px;
+        border-radius: 4px;
+        padding: 20px 15px;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      
+      .contact-link {
+        background: var(--primary-color);
+        box-shadow: var(--box-shadow);
+        color: white;
+      }
+      
+      .about-link {
+        color: var(--primary-color);
+        border: 1px solid var(--primary-color);
+      }
+
+.homepage-link {
+  color: var(--primary-color);
+  text-align: center;
+  display: block;
+}
   
+  .email-link {
+    display: flex;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 28px;
+    text-decoration: none;
+  }
+  
+  .email-link:hover {
+    text-decoration: underline;
+  }
+ 
+  .more-link {
+    color: var(--primary-color);
+    text-align: center;
+    display: block;
+  }
